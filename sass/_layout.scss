@@ -1,0 +1,16 @@
+.container {
+  height: 100vh;
+  // background-color: lawngreen;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  display: flex;
+  overflow: hidden;
+
+  @media only screen and (max-width: $bp-sm-medium) {
+    flex-direction: column;
+    //height: 200vh;
+    overflow: scroll;
+    // overflow-x: hidden;
+  }
+}
+// 623 px

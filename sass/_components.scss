@@ -1,0 +1,162 @@
+.btn {
+  display: block;
+  // margin-top: 3rem;
+  padding: 1rem 1rem;
+  border-radius: 2500px;
+  border: none;
+  background-color: rgb(87, 9, 189);
+  color: #fff;
+  font-family: $font-display;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  position: relative;
+  // margin-bottom: 1rem;
+  //width: fit-content;
+  //transition: all 1s;
+  //transform: scale(0);
+  transition: width 2s;
+  &-right {
+    border: none;
+    transform: translateY(-1px);
+    background-color: #0a6955;
+    &__icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+      display: none;
+      transform: rotate(180deg);
+      &--click {
+        display: block;
+      }
+    }
+  }
+  &__text {
+    padding: 0.5rem 2rem;
+  }
+
+  &--click {
+    & > p {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+    display: none;
+    transform: rotate(180deg);
+    &--click {
+      display: block;
+    }
+  }
+}
+// .btn-open {
+//   display: block;
+//   margin-top: 3rem;
+//   padding: 1.5rem 1.5rem;
+//   border-radius: 2500px;
+//   border: none;
+//   background-color: rgb(87, 9, 189);
+//   color: #fff;
+//   font-family: $font-display;
+//   opacity: 1;
+//   visibility: visible;
+//   //width: fit-content;
+//   transition: all 1s;
+//   transform: scale(-1);
+
+//   &__text {
+//     display: none;
+//   }
+//   //transition: width 2s;
+//   &__icon {
+//     width: 2rem;
+//     height: 2rem;
+//     fill: currentColor;
+//     display: none;
+//     transform: rotate(180deg);
+//     &--click {
+//       display: block;
+//     }
+//   }
+// }
+
+/* Vertical */
+
+// .vertical .progress-bar {
+//   float: left;
+//   height: 20rem;
+//   margin-right: 25px;
+// }
+
+.track {
+  position: relative;
+  height: 70%;
+  margin-left: 5.5rem;
+  float: left;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(42, 3, 92);
+  //height: 100%;
+  width: 0.7rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(117, 103, 170);
+  // position: relative;
+  z-index: 3;
+  span {
+    position: absolute;
+    bottom: -2rem;
+    left: -1rem;
+  }
+  &--right {
+    background-color: #0fa573;
+  }
+  &:hover {
+    background-color: rgb(87, 9, 189);
+  }
+}
+
+// .rounded .progress-track,
+// .rounded .progress-fill {
+//   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+//   border-radius: 3px;
+// }
+
+////////////////////////////////////////////
+//healper
+.icons,
+.icons__right {
+  margin-top: 2rem;
+  // margin-bottom: 5rem;
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: rgba(236, 230, 230, 0.596);
+    margin-right: 2rem;
+  }
+  &--click {
+    display: none;
+  }
+}
+.icon-menu {
+  height: 3rem;
+  width: 3rem;
+  fill: rgb(236, 230, 230);
+  position: absolute;
+  top: 3rem;
+  z-index: 2;
+  &-right {
+    left: 4rem;
+    transform: rotateY(180deg);
+  }
+  &-left {
+    right: 3rem;
+  }
+}
