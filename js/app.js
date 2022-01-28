@@ -64,6 +64,7 @@ btnright.addEventListener("click", (e) => {
   imageRight.classList.toggle("display");
   chartRight.classList.toggle("display");
 });
-fill.forEach((el) => {
+fill.forEach((el, i) => {
   el.style.height = el.innerText;
+  // el.style.animation = `show-bar-one ${i + 0.2}s`;
 });
